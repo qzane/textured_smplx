@@ -8,7 +8,7 @@ The generated texture for SMPL and SMPLX model: <br>
 <img src="data/obj1/texture_smplx.png" alt="drawing" width="200"/>
 <br>
 The rendered result: <br>
-<img src="data/obj1/rendered.png" alt="drawing" width="200"/>
+<img src="data/obj1/rendered.png" alt="drawing" width="400"/>
 
 
 ## Requirement
