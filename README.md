@@ -31,7 +31,7 @@ To generate the texture for SMPLX model, just run:  `python demo.py data/obj1 P0
 You'll find the results in `data/obj1`
 
 
-## Using your only data
+## Using your own data
 ### step1: prepare your image data
 example can be find in `./data/obj1/images`
 
