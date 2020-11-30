@@ -36,7 +36,7 @@ You'll find the results in `data/obj1`
 example can be find in `./data/obj1/images`
 
 ### step2: openpose pose detection
-For Linux users, you need to complie openpose following the instruction [here]((https://github.com/CMU-Perceptual-Computing-Lab/openpose)), and for windows users, you can used the [windows portable demo](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/installation/README.md#windows-portable-demo). <br>
+For Linux users, you need to complie openpose following the instruction [here](https://github.com/CMU-Perceptual-Computing-Lab/openpose), and for windows users, you can used the [windows portable demo](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/installation/README.md#windows-portable-demo). <br>
 `openpose.bin --display 0  --render_pose 1 --image_dir ./data/obj1/images --write_json ./data/obj1/keypoints --write_images ./data/obj1/pose_images --hand --face`
 
 ### step3: fit smpl/smplx model
