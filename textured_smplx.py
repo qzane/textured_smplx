@@ -203,7 +203,9 @@ def combine_texture_SMPL(inPath, frames=None):
     if os.path.isfile(f_pgn):
         pgn = cv2.imread(f_pgn)
         pgn = pgn.astype(np.int).sum(-1) > 0
-        all_vis[pgn==0]
+        for i in range(4):
+            pgn = scipy.ndimage.binary_erosion(pgn)
+        all_vis[pgn==0]=0
 
     all_texture = cv2.imread(f_texture)
     for frame in frames[1:]:
@@ -218,7 +220,9 @@ def combine_texture_SMPL(inPath, frames=None):
         if os.path.isfile(f_pgn):
             pgn = cv2.imread(f_pgn)
             pgn = pgn.astype(np.int).sum(-1) > 0
-            vis[pgn==0]   
+            for i in range(4):
+                pgn = scipy.ndimage.binary_erosion(pgn)
+            vis[pgn==0]=0 
             
         texture = cv2.imread(f_texture)
         select = (~all_vis)&vis
