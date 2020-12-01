@@ -25,8 +25,8 @@ The rendered result: <br>
 ## Demo
 We have an exmple data in `data/obj1`. The front iamge is `data/obj1/images/P01125-150055.jpg` and the back image is `data/obj1/images/P01125-150146.jpg`.
 
-To generate the texture for SMPL model, just run:  `python demo.py data/obj1 P01125-150055.jpg P01125-150146.jpg`
-To generate the texture for SMPLX model, just run:  `python demo.py data/obj1 P01125-150055.jpg P01125-150146.jpg`
+To generate the texture for SMPL model, just run:  `python demo.py data/obj1 P01125-150055.jpg P01125-150146.jpg smpl`
+To generate the texture for SMPLX model, just run:  `python demo.py data/obj1 P01125-150055.jpg P01125-150146.jpg smplx`
 
 You'll find the results in `data/obj1`
 
