@@ -107,7 +107,7 @@ def main(data_path, front_img, back_img, model='smpl'):
     
     # finish: copy the result
     
-    shutil.copyfile(os.path.join(npath, f_acc_texture[:-4]+'complete.png'),
+    shutil.copyfile(f_acc_texture[:-4]+'complete.png',
                     os.path.join(data_path, 'texture_%s.png'%model)) 
     
     
