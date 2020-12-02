@@ -14,16 +14,6 @@ import cv2
 import utils
 from utils import obj_vv,obj_vt,obj_fv,obj_ft,fv2norm,cv2_triangle
 
-
-
-def smpl_p3d_p2d(fname_obj, fname_pkl):
-    ''' fname_obj: the .obj file from smplify-x
-        fname_pkl: the .pkl file from smplify-x
-        return 2d (x,y) coordinates for all vertices in image space
-    '''
-    vv = obj_vv(f_obj)
-    vv[:, 1:] = -vv[:, 1:]
-
       
 def get_texture_SMPL(fname_img, fname_obj, fname_pkl, npath, obj_name, template_obj):
     ''' 
